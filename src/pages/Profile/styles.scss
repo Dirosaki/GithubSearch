@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+
+  > ul {
+    margin: 0 2.25rem;
+    margin-right: 1.475rem;
+    padding-right: 0.275rem;
+    list-style: none;
+    width: 100%;
+    max-height: calc(100vh - (7.5rem + 2.25rem));
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+      width: 0.5rem;
+      height: 0;
+    }
+
+    &:hover {
+      &::-webkit-scrollbar-thumb {
+        background-color: var(--color-black);
+      }
+    }
+
+    a + a {
+      margin-top: 1.5rem;
+    }
+  }
+}

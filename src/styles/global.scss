@@ -1,0 +1,32 @@
+:root {
+  --color-white: #ffffff;
+  --color-black: #0d1117;
+  --color-blue: #04bffa;
+  --color-background: #24292e;
+  --color-placeholder: #f0f6fc;
+  --color-placeholder-opacity: rgba(240, 246, 252, 0.75);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: var(--color-background);
+  -webkit-font-smoothing: antialiased;
+}
+
+body,
+input,
+button {
+  font-family: "Inter", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
