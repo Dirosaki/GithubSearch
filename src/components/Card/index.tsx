@@ -74,13 +74,17 @@ export function Card() {
               </clipPath>
             </defs>
           </svg>
-          <a
-            href={`https://github.com/${company}`}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {company === null || company === undefined ? "-" : company}
-          </a>
+          {company === null || company === undefined ? (
+            <p>-</p>
+          ) : (
+            <a
+              href={`https://github.com/${company}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {company}
+            </a>
+          )}
         </li>
         <li>
           <svg
