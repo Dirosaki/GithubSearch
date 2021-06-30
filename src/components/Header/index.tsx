@@ -38,7 +38,7 @@ export function Header() {
       .get(inputSearch)
       .then((response) => {
         setUserData(response?.data);
-        history.push("profile");
+        history.push("/profile");
       })
       .catch(() => {
         toastError();
